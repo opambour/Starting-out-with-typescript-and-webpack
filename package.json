@@ -1,0 +1,28 @@
+{
+    "name": "starting-with-typescript-and-webpack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "tslint": "tslint -c tslint.json -p tsconfig.json 'src/**/*.ts'",
+        "build:prod": "webpack --config webpack.config.js --mode=production",
+        "build:dev": "webpack --config webpack.config.js --mode=development --watch",
+        "client:server": "webpack-serve --config ./webpack.config.js --log-time --port 9000"
+    },
+    "author": "Michael Abebrese-Agyeman",
+    "license": "ISC",
+    "devDependencies": {
+        "cache-loader": "^1.2.2",
+        "clean-webpack-plugin": "^0.1.19",
+        "fork-ts-checker-webpack-plugin": "^0.4.9",
+        "html-webpack-plugin": "^3.2.0",
+        "ts-loader": "^4.4.2",
+        "tslint": "^5.11.0",
+        "tslint-loader": "^3.6.0",
+        "typescript": "^3.0.1",
+        "webpack": "^4.16.5",
+        "webpack-cli": "^3.1.0",
+        "webpack-serve": "^2.0.2"
+    }
+}
